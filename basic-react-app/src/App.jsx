@@ -1,7 +1,21 @@
-import './App.css'
+import './App.css';
+import Title from "./Title.jsx";
+
+// import
+
+function Descriptin(){
+  return <p>I am the description</p>
+}
 
 function App() {
-  return <h1>Hello World!</h1>
+  return (
+    <div>
+      <Title />
+      <Descriptin />
+      <Title />
+      <Descriptin />
+    </div>
+  );
 }
 
 export default App
