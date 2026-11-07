@@ -1,20 +1,14 @@
 import './App.css';
-import Title from "./Title.jsx";
+import ProductTab from './ProductTab';
+
 
 // import
 
-function Descriptin(){
-  return <p>I am the description</p>
-}
-
 function App() {
   return (
-    <div>
-      <Title />
-      <Descriptin />
-      <Title />
-      <Descriptin />
-    </div>
+    <>
+      <ProductTab/>
+    </>
   );
 }
 
