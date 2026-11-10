@@ -1,11 +1,13 @@
 import "./Product.css";
 
 function Product({title,price}){
+  let isDiscount = price > 30000;
+  let styles = {backgroundColor:isDiscount ?"pink":null};
   return(
-    <div className="Product.title">
+    <div className="Product" style={styles}>
       <h1>{title}</h1>
       <h4>Price : {price}</h4>
-      { price>30000? <p>"Discount of 5%"</p> :null}
+      {isDiscount ? <p>"Discount of 5%"</p> :null}
     </div>
   );
 }
