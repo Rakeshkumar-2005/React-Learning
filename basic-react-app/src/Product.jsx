@@ -1,10 +1,11 @@
 import "./Product.css";
 
-function Product(){
+function Product({title,price}){
   return(
-    <div className="Product">
-      <h1>Product Title</h1>
-      <h4>Product Description</h4>
+    <div className="Product.title">
+      <h1>{title}</h1>
+      <h4>Price : {price}</h4>
+      { price>30000? <p>"Discount of 5%"</p> :null}
     </div>
   );
 }
