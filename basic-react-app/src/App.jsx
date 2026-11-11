@@ -1,5 +1,7 @@
 import './App.css';
-import ProductTab from './ProductTab';
+//import ProductTab from './ProductTab';
+//import Button from './Button';
+import Form from './Form';
 
 
 // import
@@ -7,8 +9,7 @@ import ProductTab from './ProductTab';
 function App() {
   return (
     <>
-      <h2>Blockbuster Deals | Shop Now</h2>
-      <ProductTab/>
+      <Form/>
     </>
   );
 }
